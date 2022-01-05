@@ -16,11 +16,24 @@ namespace Factorial_finder
 
             Console.WriteLine("Welcome to factorial finder!");
 
-            Console.WriteLine("please enter a number: ");
+            Console.Write("please enter a positive number: ");
 
             int n = Convert.ToInt32(Console.ReadLine());
+            int factorial = 1;
+            int i = n;
 
-           
+            if (n < 0)
+            {
+                Console.WriteLine("please enter a number above 0");
+            }
+
+            if (n == 0)
+            {
+                Console.WriteLine($"the factorial of {i} is {factorial}");
+            }
+
+
+            
         }
     }
 }
